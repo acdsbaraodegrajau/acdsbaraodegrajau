@@ -72,14 +72,22 @@ footer{background:#12343b;color:white;padding:42px 0}
 .footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:30px}
 footer a{color:#d7f3f5}
 footer p{color:#b9c9cc}
-@media(max-width:900px){.cards{grid-template-columns:repeat(2,1fr)}.hero-grid,.about,.contact,.footer-grid{grid-template-columns:1fr}.project-grid,.news-grid{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:repeat(2,1fr)}nav{display:none}.menu{display:block}}
+@media(max-width:900px){
+      .cards{grid-template-columns:repeat(2,1fr)}
+      .hero-grid,.about,.contact,.footer-grid{grid-template-columns:1fr}
+      .project-grid,.news-grid{grid-template-columns:1fr 1fr}
+      .gallery{grid-template-columns:repeat(2,1fr)}
+      nav{display:none}
+      nav.open{display:flex;position:absolute;top:76px;left:0;right:0;background:white;padding:18px 4%;border-bottom:1px solid #e7eef0;box-shadow:0 10px 20px rgba(18,52,59,.08);flex-direction:column;align-items:flex-start;gap:14px}
+      .menu{display:block;cursor:pointer}
+    }
 @media(max-width:600px){.cards,.project-grid,.news-grid,.transparency{grid-template-columns:1fr}h2{font-size:30px}.hero{padding:65px 0}.hero-card{margin-top:10px}}
 </style>
 </head>
 <body>
 <header>
 <div class="container nav">
-<a href="#inicio" class="logo"><div class="logo-mark">★</div><div><span>ASSOCIAÇÃO CULTURAL,<br>DESPORTIVA E SOCIAL</span><small>BARÃO DE GRAJAÚ – MA</small></div></a>
+<a href="#inicio" class="logo"><div class="logo-mark">ACDS</div><div><span>ASSOCIAÇÃO CULTURAL,<br>DESPORTIVA E SOCIAL</span><small>BARÃO DE GRAJAÚ – MA</small></div></a>
 <nav>
 <a href="#associacao">A Associação</a><a href="#projetos">Projetos</a><a href="#cultura">Cultura</a><a href="#esporte">Esporte</a><a href="#noticias">Notícias</a><a href="#transparencia">Transparência</a><a href="#contato">Contato</a>
 </nav>
@@ -183,7 +191,7 @@ footer p{color:#b9c9cc}
 
 <section id="contato">
 <div class="container contact">
-<div><span class="kicker">Contato</span><h2>Fale com a Associação</h2><p class="muted">Entre em contato para conhecer nossos projetos, parcerias e ações.</p><div class="list"><div>📍 <strong>Localização:</strong> Barão de Grajaú – Maranhão</div><div>📱 <strong>WhatsApp:</strong> [adicione o número]</div><div>📧 <strong>E-mail:</strong> [adicione o e-mail]</div><div>📷 <strong>Instagram:</strong> [adicione o perfil]</div></div></div>
+<div><span class="kicker">Contato</span><h2>Fale com a Associação</h2><p class="muted">Entre em contato para conhecer nossos projetos, parcerias e ações.</p><div class="list"><div>📍 <strong>Localização:</strong> Rua Raul Ramos, S/N – Nossa Senhora da Conceição – Barão de Grajaú – MA</div><div>📱 <strong>WhatsApp:</strong> (99) 98422-5190</div><div>📧 <strong>E-mail:</strong> cds.associacaobg@gmail.com</div><div>📷 <strong>Instagram:</strong> @associacao_cdsbg</div></div></div>
 <form onsubmit="event.preventDefault();alert('Mensagem registrada no formulário de demonstração. Para receber mensagens de verdade, conecte este formulário a um serviço de e-mail.');">
 <input required placeholder="Seu nome"><input type="email" required placeholder="Seu e-mail"><input placeholder="Telefone"><textarea required placeholder="Escreva sua mensagem"></textarea><button class="btn btn-primary" style="border:0;background:var(--azul);color:white;cursor:pointer">Enviar mensagem</button>
 </form>
@@ -195,7 +203,7 @@ footer p{color:#b9c9cc}
 <div class="container footer-grid">
 <div><h3>Associação Cultural, Desportiva e Social de Barão de Grajaú – MA</h3><p style="margin-top:10px">Cultura • Esporte • Ação Social • Juventude</p></div>
 <div><h4>Links</h4><p><a href="#associacao">A Associação</a><br><a href="#projetos">Projetos</a><br><a href="#noticias">Notícias</a><br><a href="#transparencia">Transparência</a></p></div>
-<div><h4>Contato</h4><p>Barão de Grajaú – MA<br>[WhatsApp]<br>[E-mail]</p></div>
+<div><h4>Contato</h4><p>Barão de Grajaú – MA<br>(99) 98422-5190<br>cds.associacaobg@gmail.com</p></div>
 </div>
 <div class="container" style="border-top:1px solid rgba(255,255,255,.15);margin-top:28px;padding-top:18px"><p>© 2026 Associação Cultural, Desportiva e Social de Barão de Grajaú – MA.</p></div>
 </footer>
